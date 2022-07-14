@@ -1,0 +1,229 @@
+body{
+    background-color : white;
+}
+
+/*중앙정렬*/
+#wrapper {
+    position :relative;
+    left :50%;
+    transform :translate(-50%,  0%);
+    width: 1000px;
+    flex-direction: column;
+}
+
+#main_row1{
+    display :flex;
+    flex-direction :row;
+    flex-basis : auto;
+    margin-top: 2em;
+    margin-bottom :2em;
+}
+
+    .logo{
+        position:relative;
+        width: 15%;
+        height: 15%;
+        object-fit: cover;
+        margin-left:10%;
+        margin-right: 3%;
+    }
+
+    .search {
+        position: relative;
+    }
+
+        .input {
+            position: relative;
+            width: 400px;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 5%;
+            font-size: 14px;
+        }
+
+        .searchpic {
+            position : absolute;
+            width: 3%;
+            right: 3%;
+            margin-top:8%
+        }
+
+    .buttons{
+        position:relative;
+        flex-direction: row;
+        margin-right : 10%;
+        margin-left: 5%;
+        padding-top: 2.5%;
+    }
+        #btn{
+            border:1px solid #bbb;
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+       
+/* ul li태그에 리스트 스타일을 없앰 */
+ul li{
+    list-style: none;
+}
+/* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
+a {
+    text-decoration: none;
+}
+/* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
+menu박스 가운데정렬, 글자가운데 정렬 */
+#menu {
+    font:bold 16px "malgun gothic";
+    width:1000px;
+    line-height: 50px; 
+    text-align: center;
+}
+
+/* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
+#menu > ul > li {
+    float:left;
+    width:200px;
+    position:relative;
+    padding-right:50px;
+    padding-left:50px;
+    background-color: #74613F;
+}
+
+#menu > ul > li > a{ /*윗부분 글자색 지정*/
+    color:white;
+}
+
+#menu > ul > li > ul {
+    display:none;
+    position: absolute;
+    font-size:14px;
+    padding-right:50px;
+    padding-left:50px;
+    padding-top:2px;
+    margin-left:23px;
+}
+
+#menu > ul > li:hover > ul {
+    display:block;
+    background-color: white;
+}
+
+#menu > ul > li > ul > li > a{
+    color:black;
+}
+
+
+#menu > ul > li > ul > li > a:hover {
+    color:#74613F
+}
+
+    .uploadbox{
+        width:800px;
+        height: 450px;
+        border: 1px solid #ccc;
+        margin: 0 auto;
+        margin-top: 20%;
+        padding:25px 15px;
+        box-sizing: border-box;
+    }
+    
+    .uploadbox h1{
+        width:100%;
+        height: 40px;
+        font-size: 28px;
+        color:#7c5214;
+        border-bottom: 1px solid #5c3a07;
+        padding-left:40px;
+        box-sizing: border-box;
+    
+    }
+
+    #title{
+        width: 300px;
+        height: 25px;
+        border: 1px solid #999;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    
+    #contentbox{
+    	font-size: 10%;
+        border: 1px solid #999;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        resize:none;
+    }
+    
+    
+    .btnwrap{
+        width: 100%;
+        text-align: center;
+    }
+    .btnwrap label{
+        position: absolute;
+        left: -999em;
+    }
+    .btnwrap a{
+        width: 129px;
+        height: 35px;
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 3px;
+        color: rgba(0, 0, 0, 0.705);
+        font-size: 12px;
+        line-height: 35px;
+    }
+    #uploadbtn{
+    
+        width:129px;
+        height: 35px;
+        border: none;
+        background-color: #7c5214;
+        border-radius: 3px;
+        color:#fff;
+        font-size: 14px;
+        font-weight: bold;
+        position: relative;
+        top: 100px;
+        right: 5px;
+    }
+    
+textarea{
+	resize:none;
+}    
+
+
+
+ .commnetbox{
+        font-size: 20px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    .commentbox h1{
+    	right: 500px;
+        width: 850px;
+        height: 40px;
+        font-size: 28px;
+        color:#7c5214;
+        margin-left: 100px;
+        border-bottom: 1px dashed #5c3a07;
+        padding-right: 100px;
+        box-sizing: border-box;
+    }
+    
+        #commentbtn{
+        bottom : 60px;
+    	left: 800px;
+        width:129px;
+        height: 35px;
+        border: none;
+        background-color: #7c5214;
+        border-radius: 3px;
+        color:#fff;
+        font-size: 14px;
+        font-weight: bold;
+        position: relative;
+    }
